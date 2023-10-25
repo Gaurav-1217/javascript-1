@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping through Arrays</title>
+</head>
+<body>
+
+    <script>
+
+       /*
+        // Array
+
+        const todoList = [
+            'make dinner', // index 0
+            'make dishes', // index 1
+            'study with friends'// index 2
+        ];
+
+        // Loop
+
+        for ( let i = 0; i < todoList.length; i++ ) { // i= index
+            
+            console.log(todoList[i])
+        } */
+
+
+
+
+        // Accumulator Pattern
+
+     //Example 1 :- adding all the array values
+        const nums = [ 1, 2 , 3]
+         
+        let total = 0;  // Accumulator variable
+
+        for (i = 0 ; i < nums.length; i++){
+
+            total += nums[i];
+
+        }
+
+        console.log(total)
+
+     //Example 2 :- each number doubled
+
+     const nums2 = [ 4,4,5];
+
+     const numsDoubled = []; // Accumulator variable
+   
+     for ( let i = 0; i < nums2.length; i++ ) {
+ 
+        const num = nums2[i];
+
+        console.log(num);
+
+        numsDoubled.push(num*2)
+    
+     }
+
+     console.log(numsDoubled);
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+
+    <script>
+
+        //we use loops to run our code over and over.
+
+
+
+/*
+        // While loop 
+
+        let i = 1;  // loop variable
+
+        while (i <=5 ) // loops condition 
+        {
+
+            console.log(i); // code to be exicuted or loop body or loop code
+
+            i = i + 1 // increment step
+        }
+
+*/
+
+
+/*
+        //for loop -> it is a shorter version of while loop
+
+        // (loop variable; loop condition; increment step) -> all are at one place
+
+        for (let i = 1; i <= 5 ; i++) {
+
+            console.log(i);
+
+        }
+
+*/
+  
+
+
+
+/*
+        // Break -> lets us exit a loop early 
+
+        
+        for (let i = 1; i < 11 ; i++) {
+
+        console.log(i);
+
+        }
+
+        // we want to stop the loop when i = 8
+
+        for (let i = 1; i < 11 ; i++) {
+
+        console.log(i);
+
+        if (i === 8){
+            break;
+        }
+
+        }
+*/
+
+
+
+
+ /*       // continue -> lets us skip 1 iteration or one run of the loop
+        
+        // we want to skip the number 3
+
+        for (let i = 1; i < 11 ; i++) {
+
+        if (i === 3) {
+            continue;
+        }
+        console.log(i);
+
+        } */
+
+        // skip a number if it is divisible by 3
+
+
+        for (let i = 1; i < 11 ; i++) {
+
+        if (i % 3  === 0) {
+            continue;
+        }
+        console.log(i);
+
+        } 
+
+        // [ infinite loop ] => warning
+
+        let i = 1
+        while ( i <= 10 ) {
+            if (i % 3 === 0) {
+                i++ // always write increment inside the if statement too when using continue in while loop (imp).
+               continue;
+            }
+            console.log(i);
+            i++ // must be here also
+        }
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

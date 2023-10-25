@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>rock paper scissors game styling</title>
+
+    <link rel="stylesheet" href="rock-paper-scissors-complete.css">
+    
+</head>
+
+<body>
+    <p ><span class="title">Rock Paper scissors Game</span></p>
+
+
+    <!-- Algorithm for Rock -->
+    <button class="move-button" onclick="
+
+        playGame('rock'); // here we saved the value of playerMove parameter as rock in a callback function  
+
+        ">
+        <img src="rock.png" alt="rock" class="move-icon">
+    </button>
+
+
+    <!-- Algorithm for Paper -->
+
+    <button class="move-button" onclick="
+
+        playGame('paper'); // here we saved the value of playerMove parameter as paper in a callback function
+
+        ">
+        <img src="paper.png" alt="paper" class="move-icon">
+    </button>
+
+    <!-- Algorithm for Scissors -->
+
+    <button class="move-button" onclick="
+
+            playGame('scissors'); // here we saved the value of playerMove parameter as scissors in a callback function
+       
+        ">
+        <img src="scissors.png" alt="scissors" class="move-icon">
+    </button>
+
+    <p class="js-result result"></p>
+
+    <p class="js-moves "></p>
+    
+    <p class="js-score score"></p>
+
+
+    <button class="reset-score-button"  onclick=" 
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        
+        localStorage.removeItem('score');
+        updateScoreElement();
+        ">Reset score
+    </button>
+
+    <script src="rock-paper-scissors-complete.js"></script>
+  
+</body>
+
+</html>

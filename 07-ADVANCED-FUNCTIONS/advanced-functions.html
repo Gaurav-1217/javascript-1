@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+
+    <button onclick="" class="js-button">
+        click
+    </button>
+
+    <script>
+
+ /*       
+      
+      // .addEventListener()
+      const buttonElement = document.querySelector('.js-button');
+      
+      const eventListener =  () => {
+        console.log('clicked');
+      }
+
+      buttonElement.addEventListener('click' ,eventListener
+      );
+
+
+       // to remove 
+
+    //   buttonElement.removeEventListener('click' , eventListener
+    //   );
+
+
+
+      buttonElement.addEventListener('click' , () => {
+        console.log('clicked2')
+      });
+
+ */
+
+
+
+ 
+ //  .filter() method 
+
+      console.log  ( [ 1 , -4 , 2].filter((value , index) =>
+       {   if (value >= 0) {
+        return true;
+       } else {
+        return false;
+       }
+            
+        }));
+
+// shoetcut
+
+console.log ( [ 1 , -4 , 2].filter( value =>
+       {   return value >=0 ;
+        
+        }));
+
+// .map() method 
+
+       console.log ( [ 1, 1, 4].map(( value, index) => {
+            return 10;
+        })
+);
+
+console.log ( [ 1, 1, 4].map(( value, index) => {
+            return value + 4 ;
+        })
+);
+
+//shortcut
+
+console.log ( [ 1, 1, 4].map( value => value + 5 ));
+
+
+
+/*      
+
+        function greeting () {
+            console.log('hello');
+            console.log('');
+        }
+
+        greeting();
+
+        // functions are values
+
+
+        // saving functions inside a variable
+
+        const function1 = function greeting () {
+            console.log ('hello2');
+            console.log('');
+        };
+
+        console.log(function1);
+        console.log(typeof function1);
+
+        function1(); // calling using variable name 
+
+
+
+
+
+       // saving finctons inside an object
+
+       const object1 = {
+        fun : function () {
+            console.log('hello3');
+            console.log('');
+        }
+       }
+
+       object1.fun(); // calling using property
+
+
+
+       // passing functon into a function using parameter
+
+       function run (parameter1){
+
+        parameter1();
+        
+       }
+
+       run(function(){
+        console.log('passing function');
+        console.log('');
+       })
+
+
+
+
+
+       // setTimeout() -> let us to run a function in the future
+
+            setTimeout(function () {
+                    console.log('timeout');
+                    console.log('4 sec');
+                    
+                }, // firat parameter - function 
+                4000 // second parameter - time
+            )
+
+            console.log('next code line') // it would not block the next line of code unit timeout.
+            console.log('');   
+*/
+
+
+
+
+
+
+
+      /*
+      
+            // setInterval() -> same as setTimeout() but it runs the code again after the time we seted.
+               
+                setInterval(function () {
+                        console.log('interval')
+                        console.log('3 sec')
+                    }, // firat parameter - function 
+                    3000 // second parameter - time
+                )
+
+                console.log('next code line') // it would not block the next line of code unit timeout.
+
+        */
+
+
+
+
+
+ /*       
+        // Another way to loop through an array -> using a method -> .forEach()
+
+      const a =  [
+            'make dinner',
+
+            'watch youtube',
+
+            'do homework'
+        ].forEach(function(value){
+            console.log(value);
+            console.log('');
+        });
+
+        // .forEach method do not have continue feature
+        // we use return to skip an iteration
+
+
+        const b =  [
+            'make dinner',
+
+            'watch youtube',
+
+            'do homework'
+        ].forEach(function(value){
+
+            if (value === 'watch youtube')
+            {
+                return;
+            }
+            console.log(value);
+            console.log('');
+        });
+
+
+
+
+        // Arrow functions -> Another way to write a function
+
+        const arrowfunction = () => {
+            console.log('hello arrow function');
+            console.log('');
+        };
+
+        arrowfunction();
+
+        // recommended when passing function - easy to read
+
+        const c =  [
+            'make dinner',
+
+            'watch youtube',
+
+            'do homework'
+        ].forEach((value) => {
+
+            if (value === 'watch youtube')
+            {
+                return;
+            }
+            console.log(value);
+            console.log('');
+        });
+
+        */
+        
+
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

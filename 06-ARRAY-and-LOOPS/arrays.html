@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+
+        [10 , 20 , 30]; // This is an array representing a list of values.
+
+        [ 40, 
+          50,   //can also write like this , comma is mendatory
+          60
+        ];
+
+        // arrays themselves are values so we can save them in a variable
+
+        const myArray = [10 , 20 , 30];
+
+        // array values representation
+        // we representation them using numbers -> 0 ,1, 2, 3, 4...and so on -> called index
+
+        myArray[2] // it represents -> 30 ( 0 -> 10 , 1 -> 20 )
+
+        // we can change an array value like this 
+
+        myArray[2] = 70 // now 20 is 70
+
+        console.log(myArray);
+
+        // to know the number of values inside an array
+
+        console.log(myArray.length);
+
+
+        // adding a new value
+
+        myArray.push(100);
+
+        console.log(myArray);
+
+        // removing a value
+
+        myArray.splice(3);
+
+        console.log(myArray);
+
+        // we can also save a varicable inside an array
+
+        const arrayVariable = 1 + 2 + 4
+
+        const myArray2 = [ 'hello', 80, arrayVariable]
+
+        console.log(myArray2)
+
+
+
+
+
+
+        //  Destructuring
+
+        const [ firstValue , secValue ] = [ 5, 2, 4];
+
+        console.log(firstValue) // 5
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

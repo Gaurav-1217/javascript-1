@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+        const product = {  //name of object is - product
+            name : 'Smartphone', // property-value pair
+            price : '$10,000'
+        };
+
+        console.log(product)
+        console.log(product.name)  // consoling only name property
+        console.log(product.price) // consoling only price property
+
+        product.company = 'Samsung' // adding new property with value
+
+        console.log(product)
+
+        product.price = '$19,990' // changing the existing value
+
+        console.log(product)
+
+        delete product.name; // deleting a propery with its value
+
+        console.log(product)
+        */
+
+
+
+
+
+
+
+/*
+        // Bracket and Dot Notations
+        const product2 = {
+            name : 'shirt' ,
+            ['delevery-time'] : '1 day'
+        };
+
+        console.log(product2)
+        console.log(product2.name) //dot notation
+
+        // we can also use squre Brackets for instade of using dot
+        // remember to use the property name inside the string 
+
+        console.log(product2['name'])
+
+        console.log(product2['delevery-time'])
+        */
+
+
+
+
+
+/*
+
+// nasted object - object inside an object
+
+const product3 = {
+            name : 'shirt' ,
+            ['delevery-time'] : '1 day' ,
+
+            rating : {  // inside object
+                        
+                stars : 4.5,
+                count : 85
+
+            },
+
+            fun : function function1 () { //funnction inside object
+
+                console.log('function inside object')
+            }
+
+        };
+
+        console.log(product3.rating.count);//running nasted object
+
+        product3.fun(); // runing function which is inside object
+        */
+
+
+
+
+
+
+/*
+        // JSON 
+        // JSON only use double quotes and does not suppoert single quotes and functions
+
+        const product4 = {
+            name : 'shirt' ,
+            ['delevery-time'] : '1 day' ,
+
+            rating : {  // inside object
+                        
+                stars : 4.5,
+                count : 85
+
+            },
+
+            fun : function function1 () { //funnction inside object
+
+                console.log('function inside object')
+            }
+
+        };
+
+       const jsTojson = JSON.stringify(product4); // convert javascript object into JSON 
+
+       console.log(jsTojson);
+
+
+       
+      const jsonTojs = JSON.parse(JSON.stringify(product4)); // convert JSON into javascript object
+
+      console.log(jsonTojs); */
+
+
+
+
+/*
+      //Auto-Boxing
+
+      // javascript automatilcally creats an objest around the string so string behaves like an object so strings also have mathods because the are also another type of object.same apply for other values like numbers and booleans .
+
+        // strings and other values also has mathods 
+
+        console.log('hello'.length)
+
+        console.log('hello'.toUpperCase())
+
+        const object1 = {
+            message : 'hello'
+        };
+
+        const object2 = object1;
+        */
+
+
+
+
+
+
+        // Objects are Reference
+
+       // the object name/varible we use is nothing but just a reference of the saved value , the actual value is stored somewhere in the computer
+
+       // it is like the shortcut we use for softweres but the shortcut is just a reference of actual softwere which is stored in computer. 
+
+       const object1 = {
+        message : 'hello'
+       }
+       console.log(object1);
+
+       const object2 = object1 // copy by referene
+
+       console.log(object2);
+
+       // we can't compare objects directly
+
+        const object3 = {
+        message : 'hello'
+
+        }
+
+        console.log(object1 === object3) // false ( different references with different stored values)
+        console.log(object1 === object2) // true ( different references with common stored value )
+
+
+
+
+
+        // Shortcuts for objects
+
+        const object4 = {
+        message : 'hello'
+
+        };
+
+        // Destucturing
+
+        // if the variable and the property name are same
+
+        //const message = object4.message 
+        
+        //we have a shortcut for this
+
+        const{message} = object4
+        console.log(message); 
+
+
+        //Shorthand property
+
+        // if the property and the variable outside the scope have same name
+
+        const object5 = {
+           // message : message // value of message variable outside this scope
+
+           message
+        } 
+
+        console.log(object5)
+
+
+        //Shorthand method
+
+        const object6 = {
+        message : function finc(){
+
+            console.log('hello function')
+        }
+        };
+         object6.message();
+
+         //objects use property name to get out of a code not the function name so we can skip the funtion name like this - 
+
+
+        const object7 = {
+
+        message () {
+
+            console.log('function shortcut')
+        }
+
+        };
+         object7.message();
+
+
+
+
+
+
+
+
+
+
+        
+ 
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

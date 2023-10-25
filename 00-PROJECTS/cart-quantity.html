@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+
+<body>
+    <p>Cart Quantity</p>
+
+    <button onclick="console.log(`Cart Quantity : ${CartQuantity} `)">
+        Show Quantity
+    </button>
+
+
+    <button onclick="CartQuantity = CartQuantity + 1 ; // we can aslo write it like this CartQuantity += 1 or loke this CartQuantity++ . Here we re-assigned the variable
+                    console.log( `Cart Quantity : ${CartQuantity} ` )">
+        Add to cart +1
+    </button>
+
+
+    <button onclick="CartQuantity = CartQuantity + 2 ; //here we re-assigned the variable again
+                    console.log( `Cart Quantity : ${CartQuantity} ` )">
+        +2
+    </button>
+
+
+    <button onclick="CartQuantity = CartQuantity + 3 ; //here we re-assigned the variable again
+                    console.log( `Cart Quantity : ${CartQuantity} ` )">
+        +3
+    </button>
+
+    <button onclick="CartQuantity += 4 ; //here we re-assigned the variable again
+                    console.log( `Cart Quantity : ${CartQuantity} ` )">
+        +4
+    </button>
+
+    <button onclick="CartQuantity += 5 ; //here we re-assigned the variable again
+                    console.log( `Cart Quantity : ${CartQuantity} ` )">
+        +5
+    </button>
+
+    <button onclick="CartQuantity-- ; //here we re-assigned the variable again
+                    console.log( `Cart Quantity : ${CartQuantity} ` )">
+        Remove one
+    </button>
+
+    <button onclick="CartQuantity -= 2 ; //here we re-assigned the variable again
+                    console.log( `Cart Quantity : ${CartQuantity} ` )">
+        -2
+    </button>
+
+    <button onclick="CartQuantity -= 3 ; //here we re-assigned the variable again
+                    console.log( `Cart Quantity : ${CartQuantity} ` )">
+        -3
+    </button>
+
+    <button onclick="CartQuantity = 0 ; //here we re-assigned the variable again
+                     console.log('cart reset')
+                     console.log( `Cart Quantity : ${CartQuantity} ` )">
+        Reset cart
+    </button>
+
+    <script>
+        let CartQuantity = 0;
+
+        // if ( CartQuantity > 10)
+        // {
+        //     alert('cart quantity is full')
+        // }
+        
+    </script>
+</body>
+
+</html>

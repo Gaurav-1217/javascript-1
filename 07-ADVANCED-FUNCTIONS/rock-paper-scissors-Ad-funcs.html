@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>rock paper scissors autoplay</title>
+
+    <link rel="stylesheet" href="rock-paper-scissors-Ad-funcs.css">
+    
+</head>
+
+<body>
+    <p ><span class="title">Rock Paper scissors Game</span></p>
+
+
+    <!-- Algorithm for Rock -->
+    
+
+    <!-- <button class="move-button js-rock-button">
+
+        <img src="rock.png" alt="rock" class="move-icon">
+
+    </button> -->
+
+    <button class="move-button js-rock-button" onclick="
+
+        playGame('rock'); // here we saved the value of playerMove parameter as rock in a callback function  
+
+        ">
+        <img src="rock.png" alt="rock" class="move-icon">
+    </button>
+
+
+    <!-- Algorithm for Paper -->
+
+    <button class="move-button" onclick="
+
+        playGame('paper'); // here we saved the value of playerMove parameter as paper in a callback function
+
+        ">
+        <img src="paper.png" alt="paper" class="move-icon">
+    </button>
+
+    <!-- Algorithm for Scissors -->
+
+    <button class="move-button" onclick="
+
+            playGame('scissors'); // here we saved the value of playerMove parameter as scissors in a callback function
+       
+        ">
+        <img src="scissors.png" alt="scissors" class="move-icon">
+    </button>
+
+    <p class="js-result result"></p>
+
+    <p class="js-moves "></p>
+    
+    <p class="js-score score"></p>
+
+
+    <button class="reset-score-button"  onclick=" 
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        
+        localStorage.removeItem('score');
+        updateScoreElement();
+        ">Reset score
+    </button>
+
+    <button class="autoplay-button" onclick="
+     autoplay();
+    ">Auto Play</button>
+
+
+    <script src="rock-paper-scissors-Ad-funcs.js"></script>
+  
+</body>
+
+</html>
